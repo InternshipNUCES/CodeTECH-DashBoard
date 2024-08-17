@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="Myweb.css"> -->
+    <title>My_Introduction-codeTECH</title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.97);
+}
+.bodys {
+    width: 100vw;
+    height: 1600px;
+    border: 2px solid rgb(28, 28, 28);
+
+    background: url("images/digital-circle-circuit-blue-background-futuristic-technology.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+
+
+}
+.navbar {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.849);
+    width: 100%;
+    height: 110px;
+    color: rgb(1, 246, 254);
+    display: flex;
+}
+
+#heading {
+    padding: 20px;
+    padding-right: 8%;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    cursor: default;
+}
+
+.navbar ul {
+    display: flex;
+
+}
+a{
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    margin: 4px;
+    margin-top: 30px;
+
+}
+
+.btns {
+    font-size: 19px;
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(1, 246, 254);
+    border-radius: 7px;
+    /* border: 2px solid cyan; */
+
+}
+
+.btns:hover {
+    background-color: rgb(42, 42, 42);
+    transition: 0.2s;
+}
+
+.btns:active {
+    transform: translateY(2px);
+    transition: 0.2s;
+
+}
+
+.story-box{
+    border: 2px solid rgba(156, 156, 156, 0.58);
+    width: 80vw;
+    margin: auto;
+    height: auto;
+    backdrop-filter: blur(5px);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.289);
+    padding: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.heading{
+    font-size: 4em;
+    color: rgba(253, 255, 110, 0.61);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+    padding: 50px;
+    border-radius: 300px;
+   margin-top: 5%;
+   margin-left: 6%;
+   height: 500px;
+   width: 500px;
+   display: flex;
+   align-items: center;
+   backdrop-filter: blur(1px);
+   border: 2px solid rgba(255, 255, 255, 0.381);
+   animation: mycolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.box-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fire{
+    width: 200px;
+    height: 70px;
+    margin: 50%;
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to left, rgb(248, 165, 179),blue);
+    border: none;
+    border-radius: 10px;
+    color: red;
+}
+.fire:not(:hover){
+    transform: translateY(4px);
+    transition: 0.3s;
+}
+
+.fire:hover{
+    background: linear-gradient(to left, rgb(250, 154, 170),rgb(76, 76, 245));
+    transform: translateY(-4px);
+    transition: 0.3s;
+   color: greenyellow;
+}
+.fire:active{
+    transition: 0.3s;
+    transform: translateY(5px);
+    
+    background-color: aliceblue;
+    color: rgb(0, 229, 255);
+    box-shadow: 0 0 15px white;
+}
+.container1{
+    color: rgba(255, 255, 255, 0);
+}
+.container{
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.44);
+    transition: 3s;
+    width: 80vw;
+    height: auto;
+    border: 2px solid rgba(229, 229, 229, 0.518);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    margin-top: 50px;
+    animation: mycolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mycolor{
+    20%{border:2px solid red;}
+    50%{border:2px solid cyan;}
+    80%{border:2px solid yellow;}
+}
+@media (max-width:590px){
+    #heading{
+        padding-right: 1%;
+        font-size: 25px;
+    }
+    .btns{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .heading{
+        border-radius: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 2.5em;
+        width: 90vw;
+        height: 100px;
+
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2 id="heading">CodeTECH</h2>
+        <ul>
+            <li><a href="index.html"><button class="btns">HOME</button></a></li>
+            <li><a href="Contact.html"><button class="btns">CONTACT ME</button></a></li>
+        </ul>
+
+    </nav>
+    <div class="bodys"><br>
+        <div class="box-1">
+            <div class="heading">
+                CLick The Button and Scroll :]
+            </div>
+            <div class="btn">
+                <button class="fire" onclick="Master()" id="clicker">Click Here</button>
+            </div>
+            <div class="container1" id="element1">
+                 <H1>About Me</H1>
+                 <p>My name is Muhammad Hasaan. I am now studing at the FAST university. My home is not on Rawalpindi, Thats why im living in the hostal on 6th road. </p>
+                 <p>My Great achievement was 147 marks on NET-4. However, I was not able to get admission on my desired Field on NUST. Thats why I am here at FAST. I also got the admission offer at UET , GIKI and NFC. I only gave 4 Entry Tests and i got Selected in all universities.[I got opertunity to get admission in NUST on CS but i wanted to go in Data Science]</p>
+                 <p>I have obtained 80% marks on matric and 87% marks on FSC. But this is not my biggest achievement.</p>
+                 <p>My greatest achivement is that have ability to code.I am the Master of the following Programing Languages and Frameworks: </p>
+                 <ol>
+                    <li>C language</li>
+                    <li>C++ language</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>Bootstrap</li>
+                    <li>MongoDB</li>
+                    <li>Python (just a little bit..)</li>
+
+                 </ol>
+                 <p>Specially In JAVASCRIPT, I have a good Interest as it is a very big language and it provides LimitLess Opportunities to use itself. Thats why it is my most Favourite Language among all other languages.</p>
+            </div>
+        </div>
+          
+            
+           
+           
+          
+          
+    </div>
+    <script src="Myweb.js"></script>
+</body>
+
+</html>
